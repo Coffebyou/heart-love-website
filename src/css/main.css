@@ -1,0 +1,104 @@
+*{font-family: 'Montserrat', sans-serif; box-sizing: border-box;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+/* ---  NAVEGACION --- */
+.navbar {
+    background: #000;
+}
+.navbar .navbar-brand {
+    color:#fff;
+    font-size:20px;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    color:#fff;
+    transition: 500ms;
+    border:2px solid #000;
+}
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 2px solid #993030;
+    transition: 500ms;
+}
+.social-bars{
+    position:fixed;
+    left:-6px;
+    top:60px;
+    z-index:2000;
+}
+.whatsapp-bars{
+    background:rgb(204, 48, 48);
+    width: 70px;
+    height: 60px;
+    list-style:none;
+    text-align:center;
+    padding:10px;
+    border-top-right-radius: 10px;
+    cursor:pointer;
+}
+.telefono-bars{
+    background:rgb(204, 131, 48);
+    width: 70px;
+    height: 60px;
+    list-style:none;
+    text-align:center;
+    padding:10px;
+    border-bottom-right-radius: 10px;
+    cursor:pointer;
+}
+.whatsapp-bars:hover,
+.telefono-bars:hover{
+    transition:all 500ms;
+    background:rgb(70, 18, 18);
+    width:60px;
+}
+.carousel__contenedor{
+    position:relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente{
+    position:absolute;
+    display:block;
+	width:30px;
+	height:30px;
+	border:none;
+	top: calc(50% - 30px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align:center;
+	background:none;
+	color:#fff;
+    opacity: 60%;
+    font-size: 30px;
+}
+
+.carousel__anterior{
+    left:60px;
+}
+.carousel__siguiente{
+    right:60px;
+}
+
+@media screen and (max-width:380px){
+    .carousel__anterior,
+    .carousel__siguiente{
+        opacity: 0;
+    }
+    .social-bars{
+        left:280px;
+    }
+    .whatsapp-bars{
+        width:80px;
+        border-top-left-radius: 10px;
+    }
+    .telefono-bars{
+        width:80px;
+        border-bottom-left-radius: 10px;
+    }
+    .whatsapp-bars:hover,
+    .telefono-bars:hover{
+        transition:all 500ms;
+        background:rgb(70, 18, 18);
+        left:-5px;
+}
+}
+
+
+
